@@ -1,0 +1,82 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Calendar" Height="480" Width="500" x:Name="Main">
+    <Grid Margin="0,0,0,-6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="102*"></RowDefinition>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="63*"></RowDefinition>
+            <RowDefinition Height="67*"></RowDefinition>
+            <RowDefinition Height="67*"></RowDefinition>
+            <RowDefinition Height="64*"></RowDefinition>
+            <RowDefinition Height="64*"></RowDefinition>
+            <RowDefinition Height="7*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="ПН" x:Name="Ponedel" TextAlignment ="Center" Margin="0,91,0,6" Grid.RowSpan="2"/>
+        <TextBlock Text="ВТ" x:Name="Vtornik" TextAlignment ="Center" Margin="57,91,71,6" Grid.RowSpan="2" Grid.ColumnSpan="3"/>
+        <TextBlock Text="СР" x:Name="Sreda" TextAlignment ="Center" Grid.Column="1" Grid.ColumnSpan="2" Margin="57,91,0,6" Grid.RowSpan="2"/>
+        <TextBlock Text="ЧТ" x:Name="Chetverg" TextAlignment ="Center" Grid.Column="2" Margin="71,91,71,6" Grid.RowSpan="2" Grid.ColumnSpan="3"/>
+        <TextBlock Text="ПТ" x:Name="Pyatn" TextAlignment ="Center" Grid.Column="3" Grid.ColumnSpan="3" Margin="57,91,57,6" Grid.RowSpan="2"/>
+        <TextBlock Text="СБ" x:Name="Subbota" TextAlignment ="Center" Grid.Column="4" Margin="71,91,71,37" Grid.RowSpan="3" Grid.ColumnSpan="3"/>
+        <TextBlock Text="ВС" x:Name="Nedilya" TextAlignment ="Center" Grid.Column="5" Margin="56,91,-1,6" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="31" x:Name="day1" Grid.Row="2" Grid.Column="0" FontSize="20" Foreground="#FFB5AFAF" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="1" x:Name="day1_Copy1" Grid.Row="2" Grid.Column="1" FontSize="20" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="2" x:Name="day1_Copy2" Grid.Row="2" Grid.Column="2" FontSize="20" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="3" x:Name="day1_Copy3" Grid.Row="2" Grid.Column="3" FontSize="20" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="4" x:Name="day1_Copy4" Grid.Row="2" Grid.Column="4" FontSize="20" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="5" x:Name="day1_Copy5" Grid.Row="2" Grid.Column="5" FontSize="20" Foreground="#FFF9F6F6" Background="#FFF78C08" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="6" x:Name="day1_Copy6" Grid.Row="2" Grid.Column="6" FontSize="20" Foreground="#FFF9F6F6" Background="#FFF78C08" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="7" x:Name="day1_Copy7" Grid.Row="3" Grid.Column="0" FontSize="20" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="8" x:Name="day1_Copy8" Grid.Row="3" Grid.Column="1" FontSize="20" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="9" x:Name="day1_Copy9" Grid.Row="3" Grid.Column="2" FontSize="20" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="10" x:Name="day1_Copy10" Grid.Row="3" Grid.Column="3" FontSize="20" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="11" x:Name="day1_Copy12" Grid.Row="3" Grid.Column="4" FontSize="20" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="12" x:Name="day1_Copy13" Grid.Row="3" Grid.Column="5" FontSize="20" Foreground="#FFF9F6F6" Background="#FFF78C08" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="13" x:Name="day1_Copy14" Grid.Row="3" Grid.Column="6" FontSize="20" Foreground="#FFF9F6F6" Background="#FFF78C08" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="14" x:Name="day1_Copy15" Grid.Row="4" Grid.Column="0" FontSize="20" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="15" x:Name="day1_Copy16" Grid.Row="4" Grid.Column="1" FontSize="20" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="16" x:Name="day1_Copy17" Grid.Row="4" Grid.Column="2" FontSize="20" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="17" x:Name="day1_Copy18" Grid.Row="4" Grid.Column="3" FontSize="20" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="18" x:Name="day1_Copy19" Grid.Row="4" Grid.Column="4" FontSize="20" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="19" x:Name="day1_Copy20" Grid.Row="4" Grid.Column="5" FontSize="20" Foreground="#FFF9F6F6" Background="#FFF78C08" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Text ="20" x:Name="day1_Copy21" Grid.Row="4" Grid.Column="6" FontSize="20" Foreground="#FFF9F6F6" Background="#FFF78C08" Margin="2,2,2,2" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="21" x:Name="day1_Copy22" Grid.Row="5" Grid.Column="0" FontSize="20" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="22" x:Name="day1_Copy23" Grid.Row="5" Grid.Column="1" FontSize="20" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="23" x:Name="day1_Copy24" Grid.Row="5" Grid.Column="2" FontSize="20" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="24" x:Name="day1_Copy25" Grid.Row="5" Grid.Column="3" FontSize="20" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="25" x:Name="day1_Copy26" Grid.Row="5" Grid.Column="4" FontSize="20" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="26" x:Name="day1_Copy27" Grid.Row="5" Grid.Column="5" FontSize="20" Foreground="#FFF9F6F6" Background="#FFF78C08" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="27" x:Name="day1_Copy28" Grid.Row="5" Grid.Column="6" FontSize="20" Foreground="#FFF9F6F6" Background="#FFF78C08" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="28" x:Name="day1_Copy29" Grid.Row="6" Grid.Column="0" FontSize="20" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="29" x:Name="day1_Copy30" Grid.Row="6" Grid.Column="1" FontSize="20" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="30" x:Name="day1_Copy31" Grid.Row="6" Grid.Column="2" FontSize="20" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="1" x:Name="day1_Copy32" Grid.Row="6" Grid.Column="3" FontSize="20" Foreground="#FFA49E9E" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="2" x:Name="day1_Copy33" Grid.Row="6" Grid.Column="4" FontSize="20" Foreground="#FF9C9999" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="3" x:Name="day1_Copy34" Grid.Row="6" Grid.Column="5" FontSize="20" Foreground="#FF9C9999" Padding="15,15,15,15"/>
+        <TextBlock TextAlignment="Center" Margin="2,2,2,2" Text ="4" x:Name="day1_Copy35" Grid.Row="6" Grid.Column="6" FontSize="20" Foreground="#FF9C9999" Padding="15,15,15,15"/>
+
+        <Line x:Name="Line1" Stroke="Orange" X1="20" X2="760" Y1="85" Y2="85" StrokeThickness="8" Grid.ColumnSpan="7" Margin="5,0,20,4" ></Line>
+        <Line x:Name="Line2" Stroke="Orange" X1="20" X2="760" Y1="115" Y2="115" StrokeThickness="6" Grid.ColumnSpan="7" Grid.RowSpan="2" Margin="5,0,20,6"/>
+        <WrapPanel Margin="0,0,0,4"/>
+        <Label x:Name="day_BIG" Content="12" HorizontalAlignment="Left" VerticalAlignment="Top" Height="67" Width="84" Margin="10,10,0,0" FontSize="56" RenderTransformOrigin="0.513,0.222" Padding="5,0,5,5" Grid.ColumnSpan="2" Foreground="#FF444444"/>
+        <Label x:Name="year_BIG" Content="2019" HorizontalAlignment="Left" VerticalAlignment="Top" Height="43" Width="97" Margin="36,1,0,0" FontSize="36" RenderTransformOrigin="0.513,0.222" Padding="5,0,5,5" Grid.ColumnSpan="2" Grid.Column="5" FlowDirection="RightToLeft" Foreground="#FF444444"/>
+        <Label x:Name="month_BIG" Content="Декабрь" HorizontalAlignment="Left" VerticalAlignment="Top" Height="43" Width="146" Margin="58,38,0,0" FontSize="28" RenderTransformOrigin="0.513,0.222" Padding="5,0,5,5" Grid.ColumnSpan="3" Grid.Column="4" FlowDirection="RightToLeft" Foreground="#FF444444"/>
+
+    </Grid>
+</Window>
